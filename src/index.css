@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: linear-gradient(225deg, #858384, #cac8c8);
+  height: 100%;
+}
+
+.center {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.node {
+  transform-origin: center;
+  width: 100px;
+  height: 40px;
+  clip-path: polygon(
+    20px 0,
+    80px 0,
+    100px 20px,
+    80px 40px,
+    20px 40px,
+    0px 20px
+  );
+}
+
+.vertnode {
+  rotate: -90deg;
+  clip-path: polygon(
+    20px 0,
+    80px 0,
+    100px 20px,
+    80px 40px,
+    20px 40px,
+    0px 20px
+  );
+}
+
+.pathfill1 {
+  stroke: #232323aa;
+  filter: blur(2px);
+}
+
+.pathfill2 {
+  stroke: #cac8c855;
+  filter: blur(2px);
+  /* clip-path: polygon(0px 20px, 20px 0px, 80px 0px); */
+}
+
+.square {
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seven-segment {
+  height: 200px;
+  width: 100px;
+  position: relative;
+  /* background: #0005; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.colon {
+  display: flex;
+  height: 200px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.colon > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #232323ff;
+}
