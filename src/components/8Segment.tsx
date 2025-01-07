@@ -18,7 +18,7 @@ const SevenSegment = memo(({ value }: { value: number | string }) => {
           display: "flex",
           flexDirection: "column",
           position: "absolute",
-          gap: 4,
+          gap: 8,
         }}
       >
         <Node state={digit[0]} />
