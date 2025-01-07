@@ -20,6 +20,7 @@ function App() {
   return (
     <div className="center">
       <div
+        className="container"
         style={{
           display: "flex",
           gap: 80,
@@ -41,7 +42,7 @@ function App() {
         <SevenSegment value={s[0]} />
         <SevenSegment value={s[1]} />
       </div>
-      <div style={{ display: "flex", gap: 80, scale: "0.5" }}>
+      <div className="container2" style={{ display: "flex", gap: 80 }}>
         {UTS.map((v) => (
           <SevenSegment value={v} />
         ))}
